@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="MVVMCoordinator" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="fGP-Md-Vmh" id="WOr-cZ-7LT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fGP-Md-Vmh">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwM-br-Q9c">
+                    <rect key="frame" x="41.5" y="381" width="331" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="331" id="8b6-nS-bxa"/>
+                        <constraint firstAttribute="height" constant="34" id="qVo-QZ-GXF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkF-rK-TCt">
+                    <rect key="frame" x="91.5" y="534" width="231" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Lpg-zw-H6D"/>
+                        <constraint firstAttribute="width" constant="231" id="zNw-Ng-vtr"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signInDidTap:" destination="-1" eventType="touchUpInside" id="phG-Qs-5P8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6M-Ey-3bk">
+                    <rect key="frame" x="112" y="611" width="190" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="6jl-Xy-dSF"/>
+                        <constraint firstAttribute="height" constant="31" id="Tla-sX-FS2"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Don't have account?">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signUpDidTap:" destination="-1" eventType="touchUpInside" id="WUe-Mv-WN2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-oJ-lbD">
+                    <rect key="frame" x="112" y="657" width="190" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="1ix-U0-2mH"/>
+                        <constraint firstAttribute="width" constant="190" id="TsX-80-rS4"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Forgot password?">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="forgotPasswordDidTap:" destination="-1" eventType="touchUpInside" id="tgt-yc-SjN"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HED-JK-Rv2">
+                    <rect key="frame" x="41.5" y="450" width="331" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="331" id="5rs-dQ-kEF"/>
+                        <constraint firstAttribute="height" constant="34" id="uec-nl-LIf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="U4a-Pw-4ne"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="HED-JK-Rv2" firstAttribute="centerX" secondItem="fGP-Md-Vmh" secondAttribute="centerX" id="EeT-kG-WpC"/>
+                <constraint firstItem="Q6M-Ey-3bk" firstAttribute="top" secondItem="bkF-rK-TCt" secondAttribute="bottom" constant="25" id="P3T-Rn-fsF"/>
+                <constraint firstItem="HED-JK-Rv2" firstAttribute="top" secondItem="vwM-br-Q9c" secondAttribute="bottom" constant="35" id="ThH-61-zuQ"/>
+                <constraint firstItem="vwM-br-Q9c" firstAttribute="centerX" secondItem="fGP-Md-Vmh" secondAttribute="centerX" id="U5m-qx-xy9"/>
+                <constraint firstItem="vwM-br-Q9c" firstAttribute="centerY" secondItem="fGP-Md-Vmh" secondAttribute="centerY" constant="-50" id="VoO-ps-KUX"/>
+                <constraint firstItem="Q6M-Ey-3bk" firstAttribute="centerX" secondItem="fGP-Md-Vmh" secondAttribute="centerX" id="Wle-oM-sja"/>
+                <constraint firstItem="hbr-oJ-lbD" firstAttribute="top" secondItem="Q6M-Ey-3bk" secondAttribute="bottom" constant="15" id="eX0-eq-yhO"/>
+                <constraint firstItem="hbr-oJ-lbD" firstAttribute="centerX" secondItem="fGP-Md-Vmh" secondAttribute="centerX" id="kjC-Nc-2sc"/>
+                <constraint firstItem="bkF-rK-TCt" firstAttribute="centerX" secondItem="fGP-Md-Vmh" secondAttribute="centerX" id="wkW-go-vWE"/>
+                <constraint firstItem="bkF-rK-TCt" firstAttribute="top" secondItem="HED-JK-Rv2" secondAttribute="bottom" constant="50" id="xZO-2P-jI9"/>
+            </constraints>
+            <point key="canvasLocation" x="-526" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

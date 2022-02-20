@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="MVVMCoordinator" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="4gg-9g-HPm" id="DB6-IC-0as"/>
+                <outlet property="button" destination="R5j-yT-ojy" id="ffs-1K-oMv"/>
+                <outlet property="label" destination="kzP-IV-NB2" id="h4E-N2-jfo"/>
+                <outlet property="textField" destination="g1V-Nf-r2V" id="a0u-j5-ZK7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FHG-mL-nfN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzP-IV-NB2">
+                    <rect key="frame" x="175" y="380" width="65" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5j-yT-ojy">
+                    <rect key="frame" x="150" y="495" width="114" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Load Weather"/>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4gg-9g-HPm">
+                    <rect key="frame" x="188.5" y="594" width="37" height="37"/>
+                </activityIndicatorView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1V-Nf-r2V">
+                    <rect key="frame" x="40" y="431" width="334" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Ng6-oC-rof"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="g1V-Nf-r2V" firstAttribute="top" secondItem="kzP-IV-NB2" secondAttribute="bottom" constant="30" id="A6R-b0-x85"/>
+                <constraint firstItem="4gg-9g-HPm" firstAttribute="top" secondItem="R5j-yT-ojy" secondAttribute="bottom" constant="68" id="WbI-TV-1GI"/>
+                <constraint firstItem="R5j-yT-ojy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yif-gp-TJv"/>
+                <constraint firstItem="R5j-yT-ojy" firstAttribute="top" secondItem="g1V-Nf-r2V" secondAttribute="bottom" constant="30" id="bhX-oB-a14"/>
+                <constraint firstItem="g1V-Nf-r2V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jo6-qb-geW"/>
+                <constraint firstItem="4gg-9g-HPm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lQG-ak-mr8"/>
+                <constraint firstItem="kzP-IV-NB2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lhi-Zl-aBd"/>
+                <constraint firstItem="g1V-Nf-r2V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="m9X-mY-8VE"/>
+                <constraint firstItem="g1V-Nf-r2V" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sMJ-Mu-tnv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="g1V-Nf-r2V" secondAttribute="trailing" constant="40" id="uMA-HW-Mz4"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
